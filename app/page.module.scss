@@ -1,0 +1,18 @@
+.home{
+    min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  p{
+    margin-bottom: 5px;
+  }
+
+  hr{
+    background-color: gray;
+    width: 80vh;
+    border: 2px solid gray;
+  }
+}
