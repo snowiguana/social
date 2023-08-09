@@ -1,2 +1,86 @@
 .rightBar {
+  flex: 3;
+  position: sticky;
+  top: 90px;
+  height: calc(100vh - 50px);
+  overflow: scroll;
+  //hide scrollbar with overflow scroll above
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container {
+    padding: 20px;
+
+    .item {
+      box-shadow: -4px 3px 5px 2px rgba(0, 0, 0, 0.22);
+      -webkit-box-shadow: -4px 3px 5px 2px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: -4px 3px 5px 2px rgba(0, 0, 0, 0.22);
+      padding: 20px;
+      margin-bottom: 20px;
+      span {
+        color: gray;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px;
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          gap: 20px;
+          position: relative;
+          .userImageContainer {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            .userImage {
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .online{
+            height: 12px;
+            width: 12px;
+            background-color: limegreen;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 30px;
+          }
+          p{
+            color: gray;
+          }
+          span {
+            font-weight: 500;
+            color: black;
+          }
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          button {
+            border: none;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5%;
+
+            &:first-child {
+              background-color: #8e8eff;
+            }
+
+            &:last-child {
+              background-color: rgb(255, 127, 127);
+            }
+          }
+        }
+      }
+    }
+  }
 }

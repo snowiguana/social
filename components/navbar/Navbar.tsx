@@ -33,12 +33,12 @@ const Navbar = () => {
         <AppsOutlinedIcon />
         <div className={styles.user}>
           <div className={styles.userImageContainer}>
-            <Image
+            {/* <Image
               src="https://images.pexels.com/photos/16697128/pexels-photo-16697128/free-photo-of-woman-in-dress-posing-in-canyon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="userImage"
               fill
               className={styles.userImage}
-            />
+            /> */}
           </div>
           <span>John Doe</span>
         </div>
